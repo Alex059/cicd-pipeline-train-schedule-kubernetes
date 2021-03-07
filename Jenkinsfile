@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'node2' }
+    agent { label 'node3' }
     environment {
         //be sure to replace "willbla" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "alex059/train-schedule-k8s"
