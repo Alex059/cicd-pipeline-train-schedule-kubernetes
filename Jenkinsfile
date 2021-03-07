@@ -39,6 +39,7 @@ pipeline {
             }
         }
         stage('DeployToProduction') {
+            agent { label 'master' }
             when {
                 branch 'master'
             }
